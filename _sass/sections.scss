@@ -1,0 +1,83 @@
+.top {
+    position: relative;
+    margin-top: 0;
+    .hero {
+        position: relative;
+        margin-left: $base / -5;
+        margin-right: $base / -5;
+        height: $container-height;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-bottom: $border;
+    }
+    .triple-container {
+        display: flex;
+        flex-direction: row;
+        .image-container {
+            flex: 1;
+            padding: $container-height / 4;
+        }
+    }
+}
+
+.cherry-pie, .quiche, .galette {
+    .image-container {
+        height: $container-height;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-bottom: $base * 1.5;
+        h2 {
+            color: $white;
+            display: inline-block;
+        }
+    }
+    .text {
+        flex: 2;
+        margin: 0 $base * 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        p {
+            color: $dark-grey;
+            margin-bottom: $base / 2;
+        }
+    }
+    .badges-container {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: $base * 2;
+        img {
+            width: 57px;
+            height: 57px;
+            margin: $border;
+        }
+    }
+}
+
+.trust {
+    .image-container {
+        height: $container-height;
+        color: $white;
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: $base * 1.5;
+    }
+    .paragraph {
+        width: 50%;
+        p {
+            color: $dark-grey;
+            margin-left: $base * 2;
+        }
+    }
+}
+
+.contact {
+    p:first-of-type {
+        margin-bottom: $base / 4;
+    }
+}

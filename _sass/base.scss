@@ -1,10 +1,19 @@
 $base: 50px;
 $radius: 12px;
+$container-height: 25vw;
+$border : $base / 10;
+$max-height: 300px;
+
+body {
+padding: 0;
+margin: 0;
+}
 
 .image-container {
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: center center !important;
+    max-height: $max-height;
 }
 
 .container-padding {
@@ -12,39 +21,120 @@ $radius: 12px;
 }
 
 .border {
-    margin: $base / 5;
+    margin: $border
+}
+
+.light {
+    opacity: .4;
+
 }
 
 .button {
     text-align: center;
     border-radius: $radius;
     &.white {
-        color: $white;
+        color: $white !important;
         border: 1px solid $white;
     }
-    &.white {
-        color: $black;
+    &.black {
+        color: $black !important;
         border: 1px solid $black;
     }
     &.mix {
-        color: $white;
+        color: $white !important;
         border: 1px solid $tan;
     }
     &.large {
         @extend h6;
         padding: $base / 2;
-        width: 100%;
     }
     &.small {
         @extend p;
-        padding: $base / 3 $base / 2;
+        padding: $base / 6 $base / 2;
     }
 }
 
 .section {
     width: 100%;
-    margin: $base * 2 auto;
+    margin: $base * 1.5 0;
     .inner {
         max-width: 1406px;
+        margin: 0 auto;
+        padding: 0 $border;
+    }
+}
+
+.shadow {
+    text-shadow: 3px 3px 18px rgba( 0, 0, 0, .3);
+}
+
+.the-1-3-right-container {
+    display: flex;
+    flex-direction: row;
+    .image-container {
+        flex: 1;
+        height: $container-height;
+    }
+}
+
+.the-1-3-left-container {
+    display: flex;
+    flex-direction: row;
+    .text {
+        flex: 2;
+    }
+    .badges-container {
+        flex: 1;
+    }
+    .image-container {
+        flex: 1;
+        height: $container-height;
+    }
+}
+
+.the-1-2-container {
+    display: flex;
+    flex-direction: row;
+    .image-container{
+        flex: 6;
+    }
+    .standard-container-text {
+        flex: 7;
+    }
+}
+
+.standard-container-text {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: $container-height;
+    flex: 2;
+    justify-content: center;
+    max-height: $max-height;
+    h2 {
+        color: $white;
+    }
+    .txt-caption {
+        color: $dark-grey;
+    }
+    p {
+        color: $tan;
+        margin-bottom: $base;
+    }
+    .button {
+        margin-bottom: 0 !important;
+    }
+}
+
+.underline {
+    position: relative;
+    &:before {
+        content: "";
+        background-color: $white;
+        height: 1px;
+        width: 80%;
+        position: absolute;
+        bottom: $base / -5;
     }
 }

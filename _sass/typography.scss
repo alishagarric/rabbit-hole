@@ -9,6 +9,7 @@ h1 {
     letter-spacing: 10px;
     text-transform: uppercase;
     font-style: bold;
+    margin: 0;
 }
 
 h2 {
@@ -16,12 +17,15 @@ h2 {
     letter-spacing: 7.25px;
     text-transform: uppercase;
     font-style: bold;
+    margin: 0;
 }
 
 h6 {
     font-size: 20px;
     font-style: bold;
     letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 20px;
 }
 
 p {
