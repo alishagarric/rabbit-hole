@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: $base * 3 $base / 5 0 $base / 5;
+    padding: $base * 1.8;
+    border-top: 2px solid $black;
+
+    div:first-of-type {
+        flex: 3;
+    }
+    div:nth-of-type(2) {
+        flex: 3;
+    }
+    div:nth-of-type(3) {
+        flex: 4;
+    }
+    .nav {
+        a {
+            display: block;
+        }
+        img {
+            margin-top: $base * 2;
+            width: 28px;
+            height: 28px;
+        }
+    }
+    .logo {
+        margin-top: $base;
+        text-align: center;
+        img {
+           width: 154px;
+           height: 124px; 
+        }
+    }
+    .info {
+        text-align: right;
+        .email {
+            margin-top: $base * 3;
+        }
+    }
+}
