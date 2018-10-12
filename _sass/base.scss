@@ -1,0 +1,50 @@
+$base: 50px;
+$radius: 12px;
+
+.image-container {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+}
+
+.container-padding {
+    padding: $base * 1.75;
+}
+
+.border {
+    margin: $base / 5;
+}
+
+.button {
+    text-align: center;
+    border-radius: $radius;
+    &.white {
+        color: $white;
+        border: 1px solid $white;
+    }
+    &.white {
+        color: $black;
+        border: 1px solid $black;
+    }
+    &.mix {
+        color: $white;
+        border: 1px solid $tan;
+    }
+    &.large {
+        @extend h6;
+        padding: $base / 2;
+        width: 100%;
+    }
+    &.small {
+        @extend p;
+        padding: $base / 3 $base / 2;
+    }
+}
+
+.section {
+    width: 100%;
+    margin: $base * 2 auto;
+    .inner {
+        max-width: 1406px;
+    }
+}
