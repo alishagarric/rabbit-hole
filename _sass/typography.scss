@@ -1,7 +1,14 @@
 $seravek: Seravek, "sans-serif";
+$lg-break: 1100px;
+$med-break: 800px;
+$sm-break: 700px;
+$tiny-break: 560px;
 
 body {
     font-family: $seravek;
+}
+h1, h2, h6, .txt-caption, p, .large-paragraph {
+    transition-duration: .5s;
 }
 
 h1 {
@@ -10,6 +17,15 @@ h1 {
     text-transform: uppercase;
     font-style: bold;
     margin: 0;
+    margin: 0;
+    @media( max-width: $lg-break ){
+        font-size: 75px;
+        letter-spacing: 7.5px;
+    }
+    @media( max-width: $med-break ){
+        font-size: 50px;
+        letter-spacing: 5px;
+    }
 }
 
 h2 {
@@ -18,6 +34,14 @@ h2 {
     text-transform: uppercase;
     font-style: bold;
     margin: 0;
+    @media( max-width: $lg-break ){
+        font-size: 40px;
+        letter-spacing: 5.45px;
+    }
+    @media( max-width: $med-break ){
+        font-size: 27px;
+        letter-spacing: 3.625px;
+    }
 }
 
 h6 {
@@ -26,20 +50,40 @@ h6 {
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 20px;
+    @media( max-width: $lg-break ){
+        font-size: 15px;
+        letter-spacing: 3.65px;
+    }
+    @media( max-width: $med-break ){
+        font-size: 13px;
+        letter-spacing: 3.225px;
+    }
 }
 
 p {
     font-size: 15px;
     letter-spacing: 2px;
+    @media( max-width: $lg-break ){
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
 }
 
 .txt-caption {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1.75px;
+    @media( max-width: $lg-break ){
+        font-size: 11px;
+        letter-spacing: 1.4px;
+    }
 }
 
 .large-paragraph {
     font-size: 18px;
     letter-spacing: 2px;
+        @media( max-width: $lg-break ){
+        font-size: 15px;
+        letter-spacing: 1.5px;
+    }
 }
