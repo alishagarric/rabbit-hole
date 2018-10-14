@@ -5,7 +5,10 @@
     margin: $base * 3 $base / 5 0 $base / 5;
     padding: $base * 1.8;
     border-top: 2px solid $black;
-
+    @media (max-width: $sm-break){
+        padding-left: $base / 2;
+        padding-right: $base / 2;
+    }
     div:first-of-type {
         flex: 3;
     }
@@ -16,6 +19,9 @@
         flex: 4;
     }
     .nav {
+        @media (max-width: $tiny-break){
+            text-align: center;
+        }
         a {
             display: block;
         }
@@ -23,6 +29,43 @@
             margin-top: $base * 2;
             width: 28px;
             height: 28px;
+            @media (max-width: $med-break){
+                margin-top: $base;
+            }
+        }
+        .info {
+            margin-top: $base;
+            text-align: left;
+            display: block;
+            margin-right: $base;
+            @media (max-width: $tiny-break){
+                text-align: center;
+            }
+            @media (max-width: $tiny-break){
+                margin-right: 0;
+            }
+            .email {
+                margin-top: $base;
+            }
+            &.hide {
+                display: none;
+                @media (max-width: $med-break){
+                    display: block;
+                }
+            }
+        }
+        .logo {
+            display: block;
+            &.hide {
+                display: none;
+                @media (max-width: $tiny-break){
+                    display: block;
+                    img {
+                        width: 154px;
+                        height: 124px; 
+                     }
+                }
+            }
         }
     }
     .logo {
@@ -32,9 +75,21 @@
            width: 154px;
            height: 124px; 
         }
+        @media (max-width: $med-break){
+            img {
+                width: 231px;
+                height: 186px;
+            }
+        }
+        @media (max-width: $tiny-break){
+            display: none;
+        }
     }
     .info {
         text-align: right;
+        @media (max-width: $med-break){
+            display: none;
+        }
         .email {
             margin-top: $base * 3;
         }
