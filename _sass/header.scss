@@ -7,12 +7,25 @@ header {
         width: 132px;
         height: 60px;
         padding: $base;
+        @media(max-width: $sm-break){
+            width: 99px;
+            height: 45px; 
+            padding: $base / 2;
+        }
     }
     nav {
         padding: $base;
         display: flex;
         flex-direction: row;
         align-items: center;
+        @media(max-width: $sm-break){
+            padding: $base / 2;
+        }
+        .hide {
+            @media(max-width: $med-break){
+                display: none;
+            }
+        }
         a {
             margin-right: $base;
         }
@@ -20,6 +33,14 @@ header {
             width: 31px;
             height: 31px;
             margin-left: $base / 2;
+        }
+        svg {
+           display: none;
+           width: 28px;
+           @media(max-width: $med-break){
+                display: block;
+                height: 31px;
+           }
         }
     }
 }
