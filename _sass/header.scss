@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+        width: 132px;
+        height: 60px;
+        padding: $base;
+    }
+    nav {
+        padding: $base;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        a {
+            margin-right: $base;
+        }
+        img {
+            width: 31px;
+            height: 31px;
+            margin-left: $base / 2;
+        }
+    }
+}
