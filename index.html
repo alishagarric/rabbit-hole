@@ -37,17 +37,17 @@
                         <div class="large-paragraph clr-white shadow">Whipping up tasty treats with love and care</div>
                    </div>
                    <div class="triple-container">
-                        <div class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/directions.jpg')">
+                        <div id="directions" class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/directions.jpg')">
                             <div class="button large mix">
                                 Directions
                             </div>
                         </div>
-                        <div class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/pie-02.jpg')">
+                        <div id="menu" class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/pie-02.jpg')">
                             <div class="button large mix">
                                 Menu
                             </div>
                         </div>
-                        <div class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/store-01.jpg')">
+                        <div id="about" class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/store-01.jpg')">
                             <div class="button large mix">
                                 About
                             </div>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
            </div>
-            <div class="section cherry-pie">
+            <div class="section item">
                 <div class="inner">
                     <div class="border image-container container-padding" style="background: url('/assets/pie-03.jpg')">
                         <h2 class="underline shadow">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
            </div>
-            <div class="section quiche">
+            <div class="section item">
                 <div class="inner">
                     <div class="border image-container container-padding" style="background: url('/assets/quiche.jpg')">
                         <h2 class="underline shadow">
@@ -122,7 +122,7 @@
                     </div>
                 </div>
            </div>
-            <div class="section galette">
+            <div class="section item">
                 <div class="inner">
                     <div class="border image-container container-padding" style="background: url('/assets/gallete.jpg')">
                         <h2 class="underline shadow">
@@ -224,3 +224,55 @@
    </body>
 
 </html>
+
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+<script>
+
+
+      window.sr = ScrollReveal();
+		sr.reveal('.the-1-3-left-container > .image-container', { duration: 3000, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-3-left-container > .standard-container-text', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('.the-1-2-container > .image-container', { duration: 3000, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-2-container > .standard-container-text', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('.the-1-3-right-container > .image-container', { duration: 3000, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-3-right-container > .standard-container-text', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('.trust .image-container', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('.trust .paragraph', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('.the-1-3-right-container > .standard-container-text h2', { duration: 4000, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-3-left-container > .standard-container-text h2', { duration: 4000, distance: '50px',  reset: true } );
+        sr.reveal('.trust .image-container h2', { duration: 4000, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-2-container > .standard-container-text h2', { duration: 4000, distance: '50px',  reset: true } );
+        sr.reveal('.hero', { duration: 3000, distance: '50px',  reset: true } );
+        sr.reveal('h1', { duration: 4000, distance: '50px',  reset: true } );
+        sr.reveal('#directions', { duration: 3000, distance: '50px',  reset: true } );
+        sr.reveal('#menu', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('#about', { duration: 3000, distance: '50px',  reset: true, delay: 400 } );
+        sr.reveal('#directions div', { duration: 4000, distance: '50px',  reset: true } );
+        sr.reveal('#menu div', { duration: 4000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('#about div', { duration: 4000, distance: '50px',  reset: true, delay: 400 } );
+        sr.reveal('.item', { duration: 3000, distance: '50px',  reset: true } );
+        sr.reveal('.item h2', { duration: 2500, distance: '50px',  reset: true } );
+        sr.reveal('.item .text', { duration: 4500, distance: '50px',  reset: true } );
+        sr.reveal('.badges-container img', { duration: 3000, distance: '50px',  reset: true, rotate: {
+            x: 20,
+            z: 80
+        } } );
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
