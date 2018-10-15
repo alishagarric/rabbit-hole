@@ -5,7 +5,30 @@
         <a href="" class="hide"><p>menu</p></a>
         <a href="" class="hide"><p>about</p></a>
         <a href="" class="hide"><p>contact</p></a>
-        <img src="/assets/instagram-tan.png" class="hide">
+        <a href="https://www.instagram.com/rabbitholepie/">
+            <img src="/assets/instagram-tan.png" alt="Rabbit Role Instagram" class="hide">
+        </a>
         {% include menu.svg %}
     </nav>
 </header>
+
+<script>
+    function addClass() {
+        $('header').addClass('after-scroll');
+        $('.hero').css('margin-top', '95px');
+    }
+
+    function removeClass() {
+        $('header').removeClass('after-scroll');
+        $('.hero').css('margin-top', '160px');
+    }
+
+    $(window).scroll(function (event) {
+        if( $(window).scrollTop() == 0 ){
+            removeClass();
+        }
+        else {
+            addClass();
+        }
+    });
+</script>
