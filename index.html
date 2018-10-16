@@ -24,6 +24,16 @@
        <script type="application/ld+json">
        {"description":"You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.","@type":"BlogPosting","url":"http://localhost:4000/jekyll/update/2018/10/11/welcome-to-jekyll.html","headline":"Welcome to Jekyll!","dateModified":"2018-10-11T14:39:36-07:00","datePublished":"2018-10-11T14:39:36-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/jekyll/update/2018/10/11/welcome-to-jekyll.html"},"@context":"http://schema.org"}</script>
        <!-- End Jekyll SEO tag -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+        <link rel="manifest" href="/assets/site.webmanifest">
+        <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" href="/assets/favicon.ico">
+        <meta name="msapplication-TileColor" content="#00aba9">
+        <meta name="msapplication-config" content="/assets/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+       
        <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -35,12 +45,13 @@
         {% include header.html %}
 
        <main>
-           <div class="section top">
+           <div id="home" class="section top">
                <div class="inner">
-                   <div class="hero image-container container-padding" style="background-image: linear-gradient(rgba(220, 190, 154, 0.3), rgba(220, 190, 154, 0.3)), url('/assets/pie-01.jpg')">
+                   <div class="hero image-container container-padding" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/assets/pie-01.jpg')">
                         <h1 class="clr-white shadow">Eat More Pie.</h1>
                         <div class="large-paragraph clr-white shadow">Whipping up tasty treats with love and care</div>
                    </div>
+                   <!--
                    <div class="triple-container">
                         <div id="directions-button" class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/directions.jpg')">
                             <div class="button large mix">
@@ -58,9 +69,21 @@
                             </div>
                         </div>
                    </div>
+                -->
                </div>
            </div>
-           <div class="section">
+           <div class="section intro">
+               <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                </p>
+           </div>
+           <div id="location" class="section">
                 <div class="inner">
                     <div class="the-1-3-right-container">
                         <div class="image-container container-padding border" style="background: url('/assets/store-02.jpg')"></div>
@@ -72,14 +95,16 @@
                                 Swing By and Say Pie
                             </h2>
                             <p> 727 Riverside Dr, Reno, NV 89503 </p>
-                            <div class="button small white">
-                                directions
-                            </div>
+                            <a href="https://www.google.com/maps/place/727+Riverside+Dr,+Reno,+NV+89503/@39.5219036,-119.8242705,17z/data=!3m1!4b1!4m5!3m4!1s0x809940cd0af4b41f:0x93ba0d087c47ea69!8m2!3d39.5219036!4d-119.8220765" target="_blank">
+                                <div class="button small white">
+                                    directions
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
            </div>
-            <div class="section item">
+            <div id="menu" class="section item">
                 <div class="inner">
                     <div class="border image-container container-padding" style="background: url('/assets/pie-03.jpg')">
                         <h2 class="underline shadow">
@@ -91,9 +116,11 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                             </p>
-                            <div class="button small black">
-                                view full menu
-                            </div>
+                            <a href="/assets/menu.pdf" target="_blank">
+                                <div class="button small black">
+                                    view full menu
+                                </div>
+                            </a>
                         </div>
                         <div class="badges-container">
                             <img src="/assets/gf-dark.png">
@@ -115,9 +142,11 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                             </p>
-                            <div class="button small black">
-                                view full menu
-                            </div>
+                            <a href="/assets/menu.pdf" target="_blank">
+                                <div class="button small black">
+                                    view full menu
+                                </div>
+                            </a>
                         </div>
                         <div class="badges-container">
                             <img class="light" src="/assets/gf-light.png">
@@ -139,9 +168,11 @@
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                             </p>
-                            <div class="button small black">
-                                view full menu
-                            </div>
+                            <a href="/assets/menu.pdf" target="_blank">
+                                <div class="button small black">
+                                    view full menu
+                                </div>
+                            </a>
                         </div>
                         <div class="badges-container">
                             <img src="/assets/gf-dark.png">
@@ -163,14 +194,17 @@
                                 That Crust Dough
                             </h2>
                             <p> 727 Riverside Dr, Reno, NV 89503 </p>
-                            <div class="button small white">
-                                directions
-                            </div>
+                            <a href="https://www.google.com/maps/place/727+Riverside+Dr,+Reno,+NV+89503/@39.5219036,-119.8242705,17z/data=!3m1!4b1!4m5!3m4!1s0x809940cd0af4b41f:0x93ba0d087c47ea69!8m2!3d39.5219036!4d-119.8220765"
+                                target="_blank">
+                                <div class="button small white">
+                                    directions
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section trust">
+            <div id="about" class="section trust">
                 <div class="inner">
                     <div class="image-container border container-padding" style="background: url('/assets/store-03.jpg')">
                         <h2 class="shadow">Trust Your Baker</h2>
@@ -203,7 +237,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section contact">
+            <div id="contact" class="section contact">
                 <div class="inner">
                     <div class="the-1-2-container">
                         <div class="image-container container-padding border" style="background: url('/assets/store-04.jpg')"></div>
@@ -214,11 +248,14 @@
                             <h2>
                                 Get in Touch
                             </h2>
-                            <p><u> 727 Riverside Dr, Reno, NV 89503 </u></p>
-                            <p>1.775.453.1911</p>
-                            <div class="button small white">
-                                contact
-                            </div>
+                            <a href="tel:17754531911">
+                                <p><u>1.775.453.1911</u></p>
+                            </a>
+                            <a href="tel:17754531911">
+                                <div class="button small white">
+                                    contact
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -233,33 +270,35 @@
 
 
       window.sr = ScrollReveal();
-		sr.reveal('.the-1-3-left-container > .image-container', { duration: 3000, distance: '50px',  reset: true } );
-        sr.reveal('.the-1-3-left-container > .standard-container-text', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
-        sr.reveal('.the-1-2-container > .image-container', { duration: 3000, distance: '50px',  reset: true } );
-        sr.reveal('.the-1-2-container > .standard-container-text', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
-        sr.reveal('.the-1-3-right-container > .image-container', { duration: 3000, distance: '50px',  reset: true } );
-        sr.reveal('.the-1-3-right-container > .standard-container-text', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
-        sr.reveal('.trust .image-container', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
-        sr.reveal('.trust .paragraph', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
-        sr.reveal('.the-1-3-right-container > .standard-container-text h2', { duration: 4000, distance: '50px',  reset: true } );
-        sr.reveal('.the-1-3-left-container > .standard-container-text h2', { duration: 4000, distance: '50px',  reset: true } );
-        sr.reveal('.trust .image-container h2', { duration: 4000, distance: '50px',  reset: true } );
-        sr.reveal('.the-1-2-container > .standard-container-text h2', { duration: 4000, distance: '50px',  reset: true } );
-        sr.reveal('.hero', { duration: 3000, distance: '50px',  reset: true } );
-        sr.reveal('h1', { duration: 4000, distance: '50px',  reset: true } );
-        sr.reveal('#directions-button', { duration: 3000, distance: '50px',  reset: true } );
-        sr.reveal('#menu-button', { duration: 3000, distance: '50px',  reset: true, delay: 200 } );
-        sr.reveal('#about-button', { duration: 3000, distance: '50px',  reset: true, delay: 400 } );
-        sr.reveal('#directions-button div', { duration: 4000, distance: '50px',  reset: true } );
-        sr.reveal('#menu-button div', { duration: 4000, distance: '50px',  reset: true, delay: 200 } );
-        sr.reveal('#about-button div', { duration: 4000, distance: '50px',  reset: true, delay: 400 } );
-        sr.reveal('.item', { duration: 3000, distance: '50px',  reset: true } );
+		sr.reveal('.the-1-3-left-container > .image-container', { duration: 1500, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-3-left-container > .standard-container-text', { duration: 1500, distance: '50px',  reset: true, delay: 100 } );
+        sr.reveal('.the-1-2-container > .image-container', { duration: 1500, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-2-container > .standard-container-text', { duration: 1500, distance: '50px',  reset: true, delay: 100 } );
+        sr.reveal('.the-1-3-right-container > .image-container', { duration: 1500, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-3-right-container > .standard-container-text', { duration: 1500, distance: '50px',  reset: true, delay: 100 } );
+        sr.reveal('.trust .image-container', { duration: 1500, distance: '50px',  reset: true, delay: 100 } );
+        sr.reveal('.trust .paragraph', { duration: 1500, distance: '50px',  reset: true, delay: 100 } );
+        sr.reveal('.the-1-3-right-container > .standard-container-text h2', { duration: 2000, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-3-left-container > .standard-container-text h2', { duration: 2000, distance: '50px',  reset: true } );
+        sr.reveal('.trust .image-container h2', { duration: 2000, distance: '50px',  reset: true } );
+        sr.reveal('.the-1-2-container > .standard-container-text h2', { duration: 2000, distance: '50px',  reset: true } );
+        sr.reveal('.hero', { duration: 1500, distance: '50px',  reset: true } );
+        sr.reveal('h1', { duration: 2000, distance: '50px',  reset: true } );
+        sr.reveal('#directions-button', { duration: 1500, distance: '50px',  reset: true } );
+        sr.reveal('#menu-button', { duration: 1500, distance: '50px',  reset: true, delay: 100 } );
+        sr.reveal('#about-button', { duration: 1500, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('#directions-button div', { duration: 2000, distance: '50px',  reset: true } );
+        sr.reveal('#menu-button div', { duration: 2000, distance: '50px',  reset: true, delay: 100 } );
+        sr.reveal('#about-button div', { duration: 2000, distance: '50px',  reset: true, delay: 200 } );
+        sr.reveal('.item', { duration: 1500, distance: '50px',  reset: true } );
         sr.reveal('.item h2', { duration: 2500, distance: '50px',  reset: true } );
-        sr.reveal('.item .text', { duration: 4500, distance: '50px',  reset: true } );
-        sr.reveal('.badges-container img', { duration: 3000, distance: '50px',  reset: true, rotate: {
+        sr.reveal('.item .text', { duration: 2225, distance: '50px',  reset: true } );
+        sr.reveal('.badges-container img', { duration: 1500, distance: '50px',  reset: true, rotate: {
             x: 20,
             z: 80
         } } );
+        sr.reveal('.intro', { duration: 1500, distance: '50px', reset: true });
+
 
 
 

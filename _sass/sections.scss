@@ -1,19 +1,19 @@
 .top {
     position: relative;
-    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
     .hero {
         transition-duration: .5s;
         position: relative;
         margin-left: $base / -5;
         margin-right: $base / -5;
-        margin-top: 160px;
+        padding-top: 160px;
         height: $container-height;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        margin-bottom: $border;
         @media( max-width: $med-break ){
-            margin-bottom: $base * 1.5;
+            padding-bottom: $base * 1.5;
         }
         @media( max-width: $tiny-break ){
             padding-top: $base * 4;
@@ -35,6 +35,46 @@
                     margin: 0 auto;
                 }
             }
+        }
+    }
+}
+
+#location {
+    padding-top: 0;
+}
+
+.intro {
+    text-align: center;
+    margin: $base * 3 $base * 2;
+    position: relative;
+    @media( max-width: $sm-break ){
+        margin: $base * 2 $base * 2;
+    }    
+    @media( max-width: $tiny-break ){
+        margin: $base * 2 $base / 2;
+    }
+    &:before {
+        content: "";
+        background-color: $tan;
+        height: 1px;
+        width: 20%;
+        position: absolute;
+        top: $base * -1;
+        left: 40%;
+        @media( max-width: $sm-break ){
+            top: $base * -.75;
+        }
+    }
+    &:after {
+        content: "";
+        background-color: $tan;
+        height: 1px;
+        width: 20%;
+        position: absolute;
+        bottom: $base * -1;
+        left: 40%;
+        @media( max-width: $sm-break ){
+            bottom: $base * -.75;
         }
     }
 }
@@ -113,12 +153,6 @@
                 margin: 0 $base / 2;
             }
         }
-    }
-}
-
-.contact {
-    p:first-of-type {
-        margin-bottom: $base / 4;
     }
 }
 
