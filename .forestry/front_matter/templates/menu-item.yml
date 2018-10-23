@@ -31,3 +31,5 @@ fields:
   name: background_image
   label: Background Image
   description: Image displayed behind title
+pages:
+- _posts/cherry-pie.md
