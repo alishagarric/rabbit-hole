@@ -66,84 +66,35 @@ layout: default
                     </div>
                 </div>
            </div>
-            <div id="menu" class="section item">
-                <div class="inner">
-                    <div class="border image-container container-padding" style="background: url('{{ site.baseurl }}/assets/pie-03.jpg')">
-                        <h2 class="underline shadow">
-                            Cherry Pie
-                        </h2>
-                    </div>
-                    <div class="text-container">
-                        <div class="text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <a href="{{ site.baseurl }}/assets/menu.pdf" target="_blank">
-                                <div class="button small black">
-                                    view full menu
-                                </div>
-                            </a>
+           {% for post in site.posts %}
+                <div id="menu" class="section item">
+                    <div class="inner">
+                        <div class="border image-container container-padding" style="background: url('{{ site.baseurl }}/assets/pie-03.jpg')">
+                            <h2 class="underline shadow">
+                                {{ post.title}}
+                            </h2>
                         </div>
-                        <div class="badges-container">
-                            <img src="{{ site.baseurl }}/assets/gf-dark.png">
-                            <img class="light" src="{{ site.baseurl }}/assets/v-light.png">
-                            <img src="{{ site.baseurl }}/assets/veg-dark.png">
-                        </div>
-                    </div>
-                </div>
-           </div>
-            <div class="section item">
-                <div class="inner">
-                    <div class="border image-container container-padding" style="background: url('{{ site.baseurl }}/assets/quiche.jpg')">
-                        <h2 class="underline shadow">
-                            Three Cheese Quiche
-                        </h2>
-                    </div>
-                    <div class="text-container">
-                        <div class="text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <a href="{{ site.baseurl }}/assets/menu.pdf" target="_blank">
-                                <div class="button small black">
-                                    view full menu
-                                </div>
-                            </a>
-                        </div>
-                        <div class="badges-container">
-                            <img class="light" src="{{ site.baseurl }}/assets/gf-light.png">
-                            <img class="light" src="{{ site.baseurl }}/assets/v-light.png">
-                            <img src="{{ site.baseurl }}/assets/veg-dark.png">
+                        <div class="text-container">
+                            <div class="text">
+                                <p>
+                                    {{ post.description}} {{ post.background-image}}
+                                </p>
+                                <a href="{{ site.baseurl }}/assets/menu.pdf" target="_blank">
+                                    <div class="button small black">
+                                        view full menu
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="badges-container">
+                                <img src="{{ site.baseurl }}/assets/gf-dark.png">
+                                <img class="light" src="{{ site.baseurl }}/assets/v-light.png">
+                                <img src="{{ site.baseurl }}/assets/veg-dark.png">
+                            </div>
                         </div>
                     </div>
                 </div>
-           </div>
-            <div class="section item">
-                <div class="inner">
-                    <div class="border image-container container-padding" style="background: url('{{ site.baseurl }}/assets/gallete.jpg')">
-                        <h2 class="underline shadow">
-                            Sweet Apple Galette
-                        </h2>
-                    </div>
-                    <div class="text-container">
-                        <div class="text">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                            </p>
-                            <a href="{{ site.baseurl }}/assets/menu.pdf" target="_blank">
-                                <div class="button small black">
-                                    view full menu
-                                </div>
-                            </a>
-                        </div>
-                        <div class="badges-container">
-                            <img src="{{ site.baseurl }}/assets/gf-dark.png">
-                            <img src="{{ site.baseurl }}/assets/v-dark.png">
-                            <img src="{{ site.baseurl }}/assets/veg-dark.png">
-                        </div>
-                    </div>
-                </div>
-           </div>
+           {% endfor %}
+           
            <div class="section">
                 <div class="inner">
                     <div class="the-1-3-right-container">
