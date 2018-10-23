@@ -148,9 +148,11 @@
         }
         p {
             color: $dark-grey;
-            margin: 0 $base * 2;
+            margin-left: $base * 2;
+            margin-right: $base * 2;
             @media( max-width: $tiny-break ){
-                margin: 0 $base / 2;
+                margin-left: $base / 2;
+                margin-right: $base / 2;
             }
         }
     }
