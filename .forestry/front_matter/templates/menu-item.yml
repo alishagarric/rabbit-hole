@@ -1,0 +1,33 @@
+---
+label: Menu Item
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  description: Ex. Cherry Pie
+  config:
+    required: true
+- type: textarea
+  name: description
+  label: Description
+  description: Ex. Yummy pie.
+  config:
+    required: true
+- type: boolean
+  name: gluten_free
+  label: Gluten Free
+  description: Is this item gluten free?
+- type: boolean
+  label: Vegan
+  name: vegan
+  description: Is this item vegan?
+- type: boolean
+  name: vegetarian
+  label: Vegetarian
+  description: Is this item vegetarian?
+- type: file
+  name: background_image
+  label: Background Image
+  description: Image displayed behind title
