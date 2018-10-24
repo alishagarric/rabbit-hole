@@ -2,6 +2,17 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: default
+number: ""
+address_line_1: ""
+city: ""
+state: ""
+zipcode: ""
+maps_link: ""
+menu: "/assets/menu.pdf"
+days_open: ""
+hours_open: ""
+email: ""
+
 ---
 
         {% include header.html %}
@@ -69,7 +80,7 @@ layout: default
            {% for post in site.posts %}
                 <div id="menu" class="section item">
                     <div class="inner">
-                        <div class="border image-container container-padding" style="background: url('{{ site.baseurl }}/assets/pie-03.jpg')">
+                        <div class="border image-container container-padding" style="background: url('{{ site.baseurl }}{{ post.background_image}}')">
                             <h2 class="underline shadow">
                                 {{ post.title}}
                             </h2>
@@ -77,7 +88,7 @@ layout: default
                         <div class="text-container">
                             <div class="text">
                                 <p>
-                                    {{ post.description}} {{ post.background-image}}
+                                    {{ post.description}}
                                 </p>
                                 <a href="{{ site.baseurl }}/assets/menu.pdf" target="_blank">
                                     <div class="button small black">
@@ -86,9 +97,21 @@ layout: default
                                 </a>
                             </div>
                             <div class="badges-container">
-                                <img src="{{ site.baseurl }}/assets/gf-dark.png">
-                                <img class="light" src="{{ site.baseurl }}/assets/v-light.png">
-                                <img src="{{ site.baseurl }}/assets/veg-dark.png">
+                                {% if post.gluten_free == true %}
+                                    <img src="{{ site.baseurl }}/assets/gf-dark.png">
+                                {% else %}
+                                    <img class="light" src="{{ site.baseurl }}/assets/gf-light.png">
+                                {% endif %}
+                                {% if post.vegan == true %}
+                                    <img src="{{ site.baseurl }}/assets/v-dark.png">
+                                {% else %}
+                                    <img class="light" src="{{ site.baseurl }}/assets/v-light.png">
+                                {% endif %}
+                                {% if post.vegetarian == true %}
+                                    <img src="{{ site.baseurl }}/assets/veg-dark.png">
+                                {% else %}
+                                    <img class="light" src="{{ site.baseurl }}/assets/veg-light.png">
+                                {% endif %}
                             </div>
                         </div>
                     </div>
