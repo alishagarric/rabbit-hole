@@ -11,10 +11,12 @@
             </div>
 
             <div class="info hide">
-                <p>Mon - Fri: 6am - 3pm
-                <p>727 Riverside Dr, Reno, NV 89503</p>
-                <p>1.775.453.1911</p>
-                <p class="email">sarah@rabbitholepie.com</p>
+                <p>{{ page.days_open }} {{ page.hours_open }}</p>
+                <p>{{ page.address_line_1}}, {{ page.city }}, {{ page.state }} {{ page.zipcode }}</p>
+                <p>{{ phone_number }}</p>
+                <a href="mailto:{{page.email}}">
+                    <p class="email"><u>{{ page.email }}</u></p>
+                </a>
             </div>
 
             <a href="https://www.instagram.com/rabbitholepie/" target="_blank">
@@ -29,10 +31,10 @@
             </a>
         </div>
         <div class="info">
-            <p>Mon - Fri: 6am - 3pm
-            <p>727 Riverside Dr, Reno, NV 89503</p>
-            <a href="tel:17754531911"><p><u>1.775.453.1911</u></p></a>
-            <a href="mailto:sarah@rabbitholepie.com"><p class="email"><u>sarah@rabbitholepie.com</u></p></a>
+            <p>{{ page.days_open }} {{ page.hours_open }}</p>
+            <p>{{ page.address_line_1}}, {{ page.city }}, {{ page.state }} {{ page.zipcode }}</p>
+            <a href="tel:{{page.number}}"><p><u>{{ phone_number }}</u></p></a>
+            <a href="mailto:{{page.email}}"><p class="email"><u>{{ page.email }}</u></p></a>
         </div>
     </div>
 </footer>

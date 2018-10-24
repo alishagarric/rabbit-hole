@@ -12,36 +12,15 @@ hours_open: 6am - 3pm
 email: sarah@rabbitholepie.com
 
 ---
+{% assign num-1 = page.number | slice: 0 %}
+{% assign num-2 = page.number | slice: 1, 3 %}
+{% assign num-3 = page.number | slice: 4, 3 %}
+{% assign num-2 = page.number | slice: 7, 4 %}
+{% assign phone_number = num-1 | append: '.' | append: num-2 | append: '.' | append: num-3 | append: '.' | append: num-4 %}
 {% include header.html %}
 
        <main>
-           <div id="home" class="section top">
-               <div class="inner">
-                   <div class="hero image-container container-padding" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('{{ site.baseurl }}/assets/pie-01.jpg')">
-                        <h1 class="clr-white shadow">Eat More Pie.</h1>
-                        <div class="large-paragraph clr-white shadow">Whipping up tasty treats with love and care</div>
-                   </div>
-                   <!--
-                   <div class="triple-container">
-                        <div id="directions-button" class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ site.baseurl }}/assets/directions.jpg')">
-                            <div class="button large mix">
-                                Directions
-                            </div>
-                        </div>
-                        <div id="menu-button" class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ site.baseurl }}/assets/pie-02.jpg')">
-                            <div class="button large mix">
-                                Menu
-                            </div>
-                        </div>
-                        <div id="about-button" class="image-container border" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('{{ site.baseurl }}/assets/store-01.jpg')">
-                            <div class="button large mix">
-                                About
-                            </div>
-                        </div>
-                   </div>
-                -->
-               </div>
-           </div>
+           {% include hero.html %}
            <div class="section intro">
                <p>
                     Rabbit Hole Pie strives to take something that is old fashioned and classic, like pie, and make it new again. It
@@ -59,13 +38,13 @@ email: sarah@rabbitholepie.com
                         <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/store-02.jpg')"></div>
                         <div class="border standard-container-text container-padding">
                             <div class="txt-caption">
-                                Sat - Wed 6am - 3pm
+                                {{ page.days_open }} {{ page.hours_open }}
                             </div>
                             <h2>
                                 Swing By and Say Pie
                             </h2>
-                            <p> 727 Riverside Dr, Reno, NV 89503 </p>
-                            <a href="https://www.google.com/maps/place/727+Riverside+Dr,+Reno,+NV+89503/@39.5219036,-119.8242705,17z/data=!3m1!4b1!4m5!3m4!1s0x809940cd0af4b41f:0x93ba0d087c47ea69!8m2!3d39.5219036!4d-119.8220765" target="_blank">
+                            <p> {{ page.address_line_1}}, {{ page.city }}, {{ page.state }} {{ page.zipcode }} </p>
+                            <a href="{{ page.maps_link }}" target="_blank">
                                 <div class="button small white">
                                     directions
                                 </div>
@@ -87,7 +66,7 @@ email: sarah@rabbitholepie.com
                                 <p>
                                     {{ post.description}}
                                 </p>
-                                <a href="{{ site.baseurl }}/assets/menu.pdf" target="_blank">
+                                <a href="{{ site.baseurl }}{{ page.menu }}" target="_blank">
                                     <div class="button small black">
                                         view full menu
                                     </div>
@@ -121,13 +100,13 @@ email: sarah@rabbitholepie.com
                         <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/crust.jpg')"></div>
                         <div class="border standard-container-text container-padding">
                             <div class="txt-caption">
-                                Sat - Wed 6am - 3pm
+                                {{ page.days_open }} {{ page.hours_open }}
                             </div>
                             <h2>
                                 That Crust Dough
                             </h2>
-                            <p> 727 Riverside Dr, Reno, NV 89503 </p>
-                            <a href="https://www.google.com/maps/place/727+Riverside+Dr,+Reno,+NV+89503/@39.5219036,-119.8242705,17z/data=!3m1!4b1!4m5!3m4!1s0x809940cd0af4b41f:0x93ba0d087c47ea69!8m2!3d39.5219036!4d-119.8220765"
+                            <p> {{ page.address_line_1}}, {{ page.city }}, {{ page.state }} {{ page.zipcode }} </p>
+                            <a href="{{ page.maps_link }}"
                                 target="_blank">
                                 <div class="button small white">
                                     directions
@@ -137,72 +116,23 @@ email: sarah@rabbitholepie.com
                     </div>
                 </div>
             </div>
-            <div id="about" class="section trust">
-                <div class="inner">
-                    <div class="image-container border container-padding" style="background: url('{{ site.baseurl }}/assets/store-03.jpg')">
-                        <h2 class="shadow">Trust Your Baker</h2>
-                    </div>
-                    <div class="paragraph">
-                        <p>
-                            Raised locally with a homemaker mother and a culinary chef stepmother, Sarah stuck to her roots for higher education,
-                            receiving her undergraduate degree from UNR in the Liberal Arts. At this time, she worked in and fell in love with the
-                            hospitality industry, making it a personal goal to learn every position from front of house to back of house and
-                            understand the restaurant system as a whole. From there, she pursued culinary training in Napa Valley, CA where she
-                            graduated at the top her class and then worked under the direction of some of the most talented and influential chefs
-                            in the industry - Cindy Pawlcyn, Kristopher Kostow and Thomas Keller. Sarah cultivated a diverse knowledge base, and
-                            was trained in both savory and pastry cooking. Although she enjoys both, she realized she has a propensity toward
-                            pastry due to the technical skill and problem solving involved. Upon her return to Reno, she re-entered the culinary
-                            community here and met Mark Trujillo of Hub Coffee Roasters where she spearheaded the creation of a small plates menu
-                            for their tea bar, and produced a variety of daily pastries for the coffee shop.
-                        </p>
-                        <p>
-                            Through this experience, there was one concept that was always on the radar, but never fully explored: coffee and pie.
-                            The exactness and dedication in creating expertly crafted coffee and expertly crafted pie mirror each other. Both
-                            demand a mastery of technique, and command attention to flavor and balance. Both provide a sense of comfort and are the
-                            catalyst of bringing people together, and this is what fuels their prospective businesses.
-                        </p>
-                        <p>
-                            The name is a nod to the thrilling, yet terrifying notion of venturing out and starting a business. The expression,
-                            going down the rabbit hole, is described as entering into a situation or beginning a process or journey that is
-                            particularly strange, problematic, difficult or chaotic, especially one that becomes increasingly so as it develops or
-                            unfolds. Like Alice tenaciously pursuing the unknown, Sarah is driven by what there is to discover.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="section forces">
-                <div class="inner">
-                    <div class="the-1-3-left-container">
-                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/mug.jpg')"></div>
-                        <div class="border standard-container-text container-padding">
-                            <div class="txt-caption">
-                                Hub Collar
-                            </div>
-                            <h2>
-                                Joining Forces
-                            </h2>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% include about.html %}
+            {% include hub.html %}
             <div id="contact" class="section contact">
                 <div class="inner">
                     <div class="the-1-2-container">
                         <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/store-04.jpg')"></div>
                         <div class="border standard-container-text container-padding">
                             <div class="txt-caption">
-                                Sat - Wed 6am - 3pm
+                                {{ page.days_open }} {{ page.hours_open }}
                             </div>
                             <h2>
                                 Get in Touch
                             </h2>
-                            <a href="tel:17754531911">
-                                <p><u>1.775.453.1911</u></p>
+                            <a href="tel:{{page.number}}">
+                                <p><u>{{ phone_number }}</u></p>
                             </a>
-                            <a href="tel:17754531911">
+                            <a href="tel:{{page.number}}">
                                 <div class="button small white">
                                     contact
                                 </div>
