@@ -15,7 +15,7 @@ email: sarah@rabbitholepie.com
 {% assign num-1 = page.number | slice: 0 %}
 {% assign num-2 = page.number | slice: 1, 3 %}
 {% assign num-3 = page.number | slice: 4, 3 %}
-{% assign num-2 = page.number | slice: 7, 4 %}
+{% assign num-4 = page.number | slice: 7, 4 %}
 {% assign phone_number = num-1 | append: '.' | append: num-2 | append: '.' | append: num-3 | append: '.' | append: num-4 %}
 {% include header.html %}
 
