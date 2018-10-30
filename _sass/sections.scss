@@ -39,8 +39,23 @@
     }
 }
 
+#holiday {
+    .button {
+        width: 163px;
+    }
+    a:first-of-type{
+        margin-bottom: $base / 3;
+    }
+}
+
 #location {
     padding-top: 0;
+    p {
+        margin-bottom: 0;
+    }
+    a:first-of-type {
+        margin-bottom: $base;
+    }
 }
 
 .intro {

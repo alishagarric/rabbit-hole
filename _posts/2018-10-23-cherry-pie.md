@@ -1,10 +1,10 @@
 ---
-title: Cherry Pie
-date: 2018-10-23 23:07:15 +0000
-description: Yummy pie.
+title: Pies
+date: 2018-10-23 23:27:34 +0000
+description: Yummy pies.
 gluten_free: true
-vegan: false
+vegan: true
 vegetarian: true
-background_image: "/uploads/pie-03.jpg"
+background_image: "/uploads/pies.jpg"
 
 ---

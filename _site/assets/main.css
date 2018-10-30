@@ -268,8 +268,17 @@ a {
           max-width: 300px;
           margin: 0 auto; } }
 
+#holiday .button {
+  width: 163px; }
+#holiday a:first-of-type {
+  margin-bottom: 16.6666666667px; }
+
 #location {
   padding-top: 0; }
+  #location p, #location .button.small {
+    margin-bottom: 0; }
+  #location a:first-of-type {
+    margin-bottom: 50px; }
 
 .intro {
   text-align: center;

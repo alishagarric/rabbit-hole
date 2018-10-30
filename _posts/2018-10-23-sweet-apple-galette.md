@@ -1,10 +1,10 @@
 ---
-title: Sweet Apple Galette
-date: 2018-10-23 23:27:34 +0000
-description: Scrumptious galette.
+title: Tarts
+date: 2018-10-23 23:27:33 +0000
+description: Scrumptious tarts.
 gluten_free: true
 vegan: true
 vegetarian: true
-background_image: "/uploads/galette.jpg"
+background_image: "/uploads/tarts.jpg"
 
 ---

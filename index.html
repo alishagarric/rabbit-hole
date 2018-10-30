@@ -7,8 +7,9 @@ state: NV
 zipcode: 89503
 maps_link: https://www.google.com/maps/place/727+Riverside+Dr,+Reno,+NV+89503/@39.5219036,-119.8242705,17z/data=!3m1!4b1!4m5!3m4!1s0x809940cd0af4b41f:0x93ba0d087c47ea69!8m2!3d39.5219036!4d-119.8220765
 menu: "/uploads/menu.pdf"
-days_open: Sat - Wed
-hours_open: 6am - 3pm
+menu_holiday: "/assets/menu-holiday.pdf"
+days_open: Sat - Tue
+hours_open: 7am - 2pm
 email: sarah@rabbitholepie.com
 
 ---
@@ -35,7 +36,7 @@ email: sarah@rabbitholepie.com
            <div id="location" class="section">
                 <div class="inner">
                     <div class="the-1-3-right-container">
-                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/store-02.jpg')"></div>
+                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/swing-by.jpg')"></div>
                         <div class="border standard-container-text container-padding">
                             <div class="txt-caption">
                                 {{ page.days_open }} {{ page.hours_open }}
@@ -44,6 +45,9 @@ email: sarah@rabbitholepie.com
                                 Swing By and Say Pie
                             </h2>
                             <p> {{ page.address_line_1}}, {{ page.city }}, {{ page.state }} {{ page.zipcode }} </p>
+                            <a href="tel:{{page.number}}">
+                                <p><u>{{ phone_number }}</u></p>
+                            </a>
                             <a href="{{ page.maps_link }}" target="_blank">
                                 <div class="button small white">
                                     directions
@@ -93,23 +97,26 @@ email: sarah@rabbitholepie.com
                     </div>
                 </div>
            {% endfor %}
-           
-           <div class="section">
+            <div id="holiday" class="section">
                 <div class="inner">
                     <div class="the-1-3-right-container">
-                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/crust.jpg')"></div>
+                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/store-02.jpg')"></div>
                         <div class="border standard-container-text container-padding">
                             <div class="txt-caption">
-                                {{ page.days_open }} {{ page.hours_open }}
+                                The best time of the year
                             </div>
                             <h2>
-                                That Crust Dough
+                                Order Holiday Pies
                             </h2>
-                            <p> {{ page.address_line_1}}, {{ page.city }}, {{ page.state }} {{ page.zipcode }} </p>
-                            <a href="{{ page.maps_link }}"
-                                target="_blank">
+                            <p>Pies to share, gift or enjoy!</p>
+                            <a href="{{ site.baseurl }}{{ page.menu_holiday }}" target="_blank">
                                 <div class="button small white">
-                                    directions
+                                    view holiday menu
+                                </div>
+                            </a>
+                            <a href="mailto:{{page.email}}" target="_blank">
+                                <div class="button small white">
+                                    email order
                                 </div>
                             </a>
                         </div>
@@ -118,29 +125,6 @@ email: sarah@rabbitholepie.com
             </div>
             {% include about.html %}
             {% include hub.html %}
-            <div id="contact" class="section contact">
-                <div class="inner">
-                    <div class="the-1-2-container">
-                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/store-04.jpg')"></div>
-                        <div class="border standard-container-text container-padding">
-                            <div class="txt-caption">
-                                {{ page.days_open }} {{ page.hours_open }}
-                            </div>
-                            <h2>
-                                Get in Touch
-                            </h2>
-                            <a href="tel:{{page.number}}">
-                                <p><u>{{ phone_number }}</u></p>
-                            </a>
-                            <a href="tel:{{page.number}}">
-                                <div class="button small white">
-                                    contact
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
        </main>
 
        {% include footer.html %}
