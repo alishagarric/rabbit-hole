@@ -93,7 +93,7 @@ a {
     }
     .image-container {
         flex: 1;
-        height: $container-height;
+        min-height: $container-height;
         @media( max-width: $sm-break ){
                 padding: $base;
             }
