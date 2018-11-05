@@ -46,6 +46,9 @@
     a:first-of-type{
         margin-bottom: $base / 3;
     }
+    p:first-of-type {
+        margin-bottom: 0;
+    }
 }
 
 #location {

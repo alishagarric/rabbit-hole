@@ -31,6 +31,10 @@ fields:
   name: background_image
   label: Background Image
   description: Image displayed behind title
+- type: file
+  name: item_menu
+  label: Menu
+  description: PDF menu customer can click to see
 pages:
 - _posts/2018-10-23-cherry-pie.md
 - _posts/2018-10-23-three-cheese-quiche.md

@@ -6,7 +6,6 @@ city: Reno
 state: NV
 zipcode: 89503
 maps_link: https://www.google.com/maps/place/727+Riverside+Dr,+Reno,+NV+89503/@39.5219036,-119.8242705,17z/data=!3m1!4b1!4m5!3m4!1s0x809940cd0af4b41f:0x93ba0d087c47ea69!8m2!3d39.5219036!4d-119.8220765
-menu: "/uploads/menu.pdf"
 menu_holiday: "/assets/menu-holiday.pdf"
 days_open: Sat - Tue
 hours_open: 7am - 2pm
@@ -24,13 +23,15 @@ email: sarah@rabbitholepie.com
            {% include hero.html %}
            <div class="section intro">
                <p>
-                    Rabbit Hole Pie strives to take something that is old fashioned and classic, like pie, and make it new again. It
-                    presents a modern interpretation of a nostalgic, familiar dish. Making pie, like many forms of cooking, is an
-                    expression of creativity and when the baker is focused and concentrated on their craft the quality will naturally
-                    follow. 
+                    Mission statement: honoring the craft of cooking.
+               </p>
+               <p>
+                    Rabbit Hole Pie strives to take something that is classic and old fashioned and make it new again. It presents a modern
+                    interpretation of a nostalgic, familiar dish. Making pie, like many forms of cooking, is an expression of creativity
+                    and when the baker is focused on their craft the quality will naturally follow.
                 </p>
                 <p>
-                    It doesn't have to always be perfect, it just has to be made with care.
+                    It doesn't have to be perfect, it just has to be made with care.
                 </p>
            </div>
            <div id="location" class="section">
@@ -70,7 +71,7 @@ email: sarah@rabbitholepie.com
                                 <p>
                                     {{ post.description}}
                                 </p>
-                                <a href="{{ site.baseurl }}{{ page.menu }}" target="_blank">
+                                <a href="{{ site.baseurl }}{{ post.item_menu }}" target="_blank">
                                     <div class="button small black">
                                         view full menu
                                     </div>
@@ -100,7 +101,7 @@ email: sarah@rabbitholepie.com
             <div id="holiday" class="section">
                 <div class="inner">
                     <div class="the-1-3-right-container">
-                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/store-02.jpg')"></div>
+                        <div class="image-container container-padding border" style="background: url('{{ site.baseurl }}/assets/holiday-pie.jpg')"></div>
                         <div class="border standard-container-text container-padding">
                             <div class="txt-caption">
                                 The best time of the year
@@ -108,7 +109,9 @@ email: sarah@rabbitholepie.com
                             <h2>
                                 Order Holiday Pies
                             </h2>
-                            <p>Pies to share, gift or enjoy!</p>
+                            <p>Orders must be submitted 48 hours in advance.</p>
+                            <p>Pick up can be arranged the week of Thanksgiving at the Hub coffee shop, Saturday - Thursday.</p>
+
                             <a href="{{ site.baseurl }}{{ page.menu_holiday }}" target="_blank">
                                 <div class="button small white">
                                     view holiday menu

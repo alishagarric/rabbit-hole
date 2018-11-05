@@ -272,6 +272,8 @@ a {
   width: 163px; }
 #holiday a:first-of-type {
   margin-bottom: 16.6666666667px; }
+#holiday p:first-of-type, #holiday .button.small:first-of-type {
+  margin-bottom: 0; }
 
 #location {
   padding-top: 0; }
