@@ -1,7 +1,7 @@
 body {
   font-family: Seravek, "sans-serif"; }
 
-h1, h2, h6, .button.large, .txt-caption, p, .button.small, .large-paragraph {
+h1, h2, #menu-overlay nav a, h6, .button.large, .txt-caption, p, .button.small, .large-paragraph {
   transition-duration: .5s; }
 
 h1 {
@@ -20,18 +20,18 @@ h1 {
       font-size: 50px;
       letter-spacing: 5px; } }
 
-h2 {
+h2, #menu-overlay nav a {
   font-size: 53px;
   letter-spacing: 7.25px;
   text-transform: uppercase;
   font-style: bold;
   margin: 0; }
   @media (max-width: 1100px) {
-    h2 {
+    h2, #menu-overlay nav a {
       font-size: 40px;
       letter-spacing: 5.45px; } }
   @media (max-width: 800px) {
-    h2 {
+    h2, #menu-overlay nav a {
       font-size: 27px;
       letter-spacing: 3.625px; } }
 
@@ -213,7 +213,7 @@ a {
   @media (max-width: 700px) {
     .standard-container-text {
       height: auto; } }
-  .standard-container-text h2 {
+  .standard-container-text h2, .standard-container-text #menu-overlay nav a, #menu-overlay nav .standard-container-text a {
     color: white; }
   .standard-container-text .txt-caption {
     color: #9B9B9B; }
@@ -336,7 +336,7 @@ a {
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 75px; }
-  .item .image-container h2 {
+  .item .image-container h2, .item .image-container #menu-overlay nav a, #menu-overlay nav .item .image-container a {
     color: white;
     display: inline-block; }
 .item .text {
@@ -530,3 +530,22 @@ header {
   header.after-scroll .logo {
     width: 99px;
     height: 45px; }
+
+#menu-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; }
+  #menu-overlay nav {
+    text-align: center;
+    margin: auto auto; }
+    #menu-overlay nav img {
+      width: 31px;
+      height: 31px; }

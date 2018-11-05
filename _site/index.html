@@ -54,7 +54,7 @@
             <img src="/rabbit-hole/assets/instagram-tan.png" alt="Rabbit Role Instagram" class="hide">
         </a>
         <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In  -->
-<svg version="1.1"
+<svg id="menu-icon" version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="488px" height="466px" viewBox="0 0 488 466" style="enable-background:new 0 0 488 466;"
 	 xml:space="preserve">
@@ -103,6 +103,10 @@
             addClass();
         }
     });
+
+    $(".menu-icon").on("click", function () {
+        $("#menu-overlay").addClass("show");
+    });
 </script>
 
        <main>
@@ -133,6 +137,7 @@
     -->
     </div>
 </div>
+           
            <div class="section intro">
                <p>
                     Mission statement: honoring the craft of cooking.
