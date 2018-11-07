@@ -15,19 +15,6 @@ fields:
   description: Ex. Yummy pie.
   config:
     required: true
-- type: boolean
-  name: apple
-  label: Apple Ingredients?
-  description: Does this menu have apple ingredients?
-  default: false
-- type: boolean
-  label: Vegan
-  name: vegan
-  description: Is this item vegan?
-- type: boolean
-  name: vegetarian
-  label: Vegetarian
-  description: Is this item vegetarian?
 - type: file
   name: background_image
   label: Background Image
@@ -36,6 +23,23 @@ fields:
   name: item_menu
   label: Menu
   description: PDF menu customer can click to see
+- type: boolean
+  name: apple
+  label: Apple Ingredients?
+  description: Does this menu have apple ingredients?
+  default: false
+- type: boolean
+  name: peppermint
+  label: Peppermint Ingredients
+  description: Does this menu have peppermint ingredients?
+- type: boolean
+  name: vegetables
+  label: Vegetables Ingredients
+  description: Does this menu have all vegetable items?
+- type: boolean
+  label: Mixed Berry Ingredients
+  name: mixed_berry
+  description: Does this menu have mixed berry ingredients?
 pages:
 - _posts/2018-11-05-galettes.md
 - _posts/2018-10-23-cherry-pie.md
