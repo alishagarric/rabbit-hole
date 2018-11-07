@@ -7,5 +7,20 @@ vegan: true
 vegetarian: true
 background_image: "/uploads/pies.jpg"
 item_menu: "/uploads/PIE MENU  (2).pdf"
+apple: true
+peppermint: false
+vegetables: false
+mixed_berry: true
+orange: false
+meat: false
+strawberry: true
+cranberry: false
+vanilla: false
+lemon: true
+pecan: false
+hazelnut: false
+pumpkin: false
+lemon_and_blueberry: false
+coconut: false
 
 ---
