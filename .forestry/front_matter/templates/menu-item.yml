@@ -16,9 +16,10 @@ fields:
   config:
     required: true
 - type: boolean
-  name: gluten_free
-  label: Gluten Free
-  description: Is this item gluten free?
+  name: apple
+  label: Apple Ingredients?
+  description: Does this menu have apple ingredients?
+  default: false
 - type: boolean
   label: Vegan
   name: vegan
@@ -36,7 +37,7 @@ fields:
   label: Menu
   description: PDF menu customer can click to see
 pages:
-- _posts/2018-10-23-cherry-pie.md
 - _posts/2018-11-05-galettes.md
+- _posts/2018-10-23-cherry-pie.md
 - _posts/2018-10-23-three-cheese-quiche.md
 - _posts/2018-10-23-sweet-apple-galette.md
