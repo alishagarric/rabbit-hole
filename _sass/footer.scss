@@ -23,12 +23,13 @@
             text-align: center;
         }
         a {
-            display: block;
+          //  display: block;
         }
         img {
             margin-top: $base * 2;
             width: 28px;
             height: 28px;
+            margin-right: $base / 4;
             @media (max-width: $med-break){
                 margin-top: $base;
             }
