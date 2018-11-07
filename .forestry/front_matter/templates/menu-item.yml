@@ -35,11 +35,55 @@ fields:
 - type: boolean
   name: vegetables
   label: Vegetables Ingredients
-  description: Does this menu have all vegetable items?
+  description: Does this menu have an item with all vegetable ingredients?
 - type: boolean
   label: Mixed Berry Ingredients
   name: mixed_berry
   description: Does this menu have mixed berry ingredients?
+- type: boolean
+  name: orange
+  label: Orange Ingredients
+  description: Does this menu have orange ingredients?
+- type: boolean
+  name: meat
+  label: Meat Ingredients
+  description: Does this menu have an item with meat ingredients?
+- type: boolean
+  name: strawberry
+  label: Strawberry Ingredients
+  description: Does this menu have strawberry ingredients?
+- type: boolean
+  name: cranberry
+  label: Cranberry Ingredients
+  description: Does this menu have cranberry ingredients?
+- type: boolean
+  name: vanilla
+  label: Vanilla Ingredients
+  description: Does this menu have vanilla ingredients?
+- type: boolean
+  name: lemon
+  label: Lemon Ingredients
+  description: Does this menu have lemon ingredients?
+- type: boolean
+  name: pecan
+  label: Pecan Ingredients
+  description: Does this menu have pecan ingredients?
+- type: boolean
+  name: hazelnut
+  label: Hazelnut Ingredients
+  description: Does this menu have hazelnut ingredients?
+- type: boolean
+  name: pumpkin
+  label: Pumpkin Ingredients
+  description: Does this menu have pumpkin ingredients?
+- type: boolean
+  name: lemon_and_blueberry
+  label: Lemon and Blueberry Ingredients
+  description: Does this menu have lemon and blueberry ingredients?
+- type: boolean
+  name: coconut
+  label: Coconut Ingredients
+  description: Does this menu have coconut ingredients?
 pages:
 - _posts/2018-11-05-galettes.md
 - _posts/2018-10-23-cherry-pie.md
