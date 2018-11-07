@@ -9,6 +9,9 @@ header {
     left: 0;
     right: 0;
     background-color: $white;
+    #menu-icon {
+        cursor: pointer;
+    }
     .logo {
         width: 132px;
         height: 60px;

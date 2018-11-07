@@ -487,6 +487,8 @@ header {
   left: 0;
   right: 0;
   background-color: white; }
+  header #menu-icon {
+    cursor: pointer; }
   header .logo {
     width: 132px;
     height: 60px;
@@ -543,9 +545,21 @@ header {
   right: 0;
   bottom: 0;
   background-color: white; }
+  #menu-overlay.hide-menu {
+    display: none; }
+  #menu-overlay #exit {
+    width: 43px;
+    height: 43px;
+    position: fixed;
+    margin: 25px;
+    top: 0;
+    right: 0;
+    cursor: pointer; }
   #menu-overlay nav {
     text-align: center;
     margin: auto auto; }
+    #menu-overlay nav a p, #menu-overlay nav a .button.small {
+      font-size: 20px; }
     #menu-overlay nav img {
       width: 31px;
       height: 31px; }

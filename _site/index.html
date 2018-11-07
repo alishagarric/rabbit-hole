@@ -104,8 +104,8 @@
         }
     });
 
-    $(".menu-icon").on("click", function () {
-        $("#menu-overlay").addClass("show");
+    $("#menu-icon").on("click", function () {
+        $("#menu-overlay").removeClass("hide-menu");
     });
 </script>
 
@@ -137,7 +137,26 @@
     -->
     </div>
 </div>
-           
+           <div class="hide-menu" id="menu-overlay">
+    <img onclick="hideMenu()" id="exit" src="/rabbit-hole/assets/exit.png" alt="Exit Menu">
+    <nav>
+        <a href="#location" onclick="hideMenu()" class="hide"><p>location</p></a>
+        <a href="#menu" onclick="hideMenu()" class="hide"><p>menu</p></a>
+        <a href="#about" onclick="hideMenu()" class="hide"><p>about</p></a>
+        <a href="#holiday" onclick="hideMenu()" class="hide"><p>holidays</p></a>
+        <a href="https://www.instagram.com/rabbitholepie/" target="_blank">
+            <img src="/rabbit-hole/assets/instagram-tan.png" alt="Rabbit Role Instagram">
+        </a>
+    </nav>
+</div>
+
+<script>
+
+    function hideMenu() {
+        $("#menu-overlay").addClass("hide-menu");
+    }
+
+</script>
            <div class="section intro">
                <p>
                     Mission statement: honoring the craft of cooking.
