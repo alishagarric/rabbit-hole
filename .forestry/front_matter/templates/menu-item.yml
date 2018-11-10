@@ -84,6 +84,10 @@ fields:
   name: coconut
   label: Coconut Ingredients
   description: Does this menu have coconut ingredients?
+- type: boolean
+  name: savory
+  label: Savory Item
+  description: Does this menu have a savory item?
 pages:
 - _posts/2018-11-05-galettes.md
 - _posts/2018-10-23-cherry-pie.md
