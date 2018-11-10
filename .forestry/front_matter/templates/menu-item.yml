@@ -59,7 +59,7 @@ fields:
 - type: boolean
   name: brule
   label: Creme Brule Ingredients
-  description: Does this menu have vanilla ingredients?
+  description: Does this menu have creme brule ingredients?
 - type: boolean
   name: lemon
   label: Lemon Ingredients
