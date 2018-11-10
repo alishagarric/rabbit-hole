@@ -16,7 +16,7 @@ meat: false
 strawberry: false
 cranberry: false
 vanilla: true
-lemon: true
+lemon: false
 pecan: false
 hazelnut: true
 pumpkin: false
