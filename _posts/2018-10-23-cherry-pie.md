@@ -1,7 +1,7 @@
 ---
 title: Pies
 date: 2018-10-23 23:27:34 +0000
-description: signature pie crust. fruit filling.
+description: "(signature pie crust, fruit filling, lattice top)"
 gluten_free: true
 vegan: true
 vegetarian: true
