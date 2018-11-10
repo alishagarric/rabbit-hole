@@ -38,7 +38,7 @@ fields:
   description: Does this menu have an item with all vegetable ingredients?
 - type: boolean
   label: Mixed Berry Ingredients
-  name: mixed_berry
+  name: berry
   description: Does this menu have mixed berry ingredients?
 - type: boolean
   name: orange
