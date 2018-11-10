@@ -77,9 +77,9 @@ fields:
   label: Pumpkin Ingredients
   description: Does this menu have pumpkin ingredients?
 - type: boolean
-  name: lemon_and_blueberry
-  label: Lemon and Blueberry Ingredients
-  description: Does this menu have lemon and blueberry ingredients?
+  name: blueberry
+  label: Blueberry Ingredients
+  description: Does this menu blueberry ingredients?
 - type: boolean
   name: coconut
   label: Coconut Ingredients
