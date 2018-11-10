@@ -22,5 +22,10 @@ hazelnut: false
 pumpkin: false
 lemon_and_blueberry: false
 coconut: false
+berry: true
+brule: false
+blueberry: false
+savory: false
+sweet: false
 
 ---
