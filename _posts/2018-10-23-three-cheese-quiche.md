@@ -1,7 +1,7 @@
 ---
 title: Quiche
 date: 2018-10-23 23:27:32 +0000
-description: Delicious quiche.
+description: ("pate brisee" aka shortcrust pastry, egg custard filling)
 gluten_free: true
 vegan: true
 vegetarian: true
@@ -22,5 +22,10 @@ hazelnut: false
 pumpkin: false
 lemon_and_blueberry: false
 coconut: false
+berry: false
+brule: false
+blueberry: false
+savory: false
+sweet: false
 
 ---
