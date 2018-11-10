@@ -1,8 +1,7 @@
 ---
 title: Tarts
 date: 2018-10-23 23:27:33 +0000
-description: "(custard or cream based filling, various crusts, garnished with complimentary
-  ingredients)"
+description: "(custard or cream based filling, various crusts, decorative garnish)"
 gluten_free: true
 vegan: true
 vegetarian: true
