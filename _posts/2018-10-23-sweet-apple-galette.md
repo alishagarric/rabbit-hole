@@ -1,7 +1,7 @@
 ---
 title: Tarts
 date: 2018-10-23 23:27:33 +0000
-description: Scrumptious tarts.
+description: Tarts with a custard or cream based filling.
 gluten_free: true
 vegan: true
 vegetarian: true
