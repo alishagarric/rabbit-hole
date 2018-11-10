@@ -16,11 +16,16 @@ meat: false
 strawberry: false
 cranberry: false
 vanilla: true
-lemon: false
+lemon: true
 pecan: false
 hazelnut: true
 pumpkin: false
 lemon_and_blueberry: true
 coconut: true
+berry: false
+brule: true
+blueberry: true
+savory: false
+sweet: false
 
 ---
