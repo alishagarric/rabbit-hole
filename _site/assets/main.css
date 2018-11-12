@@ -507,13 +507,11 @@ header {
     @media (max-width: 700px) {
       header nav {
         padding: 25px; } }
-    @media (max-width: 800px) {
+    @media (max-width: 865px) {
       header nav .hide {
         display: none; } }
     header nav a {
       margin-right: 50px; }
-      header nav a:last-of-type {
-        margin-right: 0; }
     header nav img {
       width: 31px;
       height: 31px;
@@ -521,10 +519,14 @@ header {
     header nav svg {
       display: none;
       width: 28px; }
-      @media (max-width: 800px) {
+      @media (max-width: 865px) {
         header nav svg {
           display: block;
           height: 31px; } }
+    header nav .social-row a {
+      margin-right: 0; }
+      header nav .social-row a img {
+        margin-left: 12.5px; }
   header.after-scroll .logo, header.after-scroll nav {
     padding-top: 12.5px;
     padding-bottom: 12.5px; }
