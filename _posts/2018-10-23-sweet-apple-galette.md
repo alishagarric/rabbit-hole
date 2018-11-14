@@ -5,7 +5,7 @@ description: "(custard or cream based filling, various crusts, decorative garnis
 gluten_free: true
 vegan: true
 vegetarian: true
-background_image: "/uploads/tarts.jpg"
+background_image: "/uploads/Hendo (48 of 62).jpg"
 item_menu: "/uploads/TART MENU.pdf"
 apple: false
 peppermint: false
