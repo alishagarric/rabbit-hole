@@ -5,7 +5,7 @@ description: "(signature pie crust, fruit filling, lattice top)"
 gluten_free: true
 vegan: true
 vegetarian: true
-background_image: "/uploads/IMG_4653.PNG"
+background_image: "/uploads/IMG_4622.JPG"
 item_menu: "/uploads/PIE MENU  (2).pdf"
 apple: true
 peppermint: false
