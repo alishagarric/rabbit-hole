@@ -10,6 +10,9 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+- type: document
+  path: _data/holiday.yaml
+  label: Holiday Menu
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
