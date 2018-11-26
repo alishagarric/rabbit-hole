@@ -3,6 +3,6 @@ type: file
 name: menu_holiday
 label: Holida Menu
 hidden: false
-default "/uploads/HolidayMenu.pdf"
+default: "/uploads/HolidayMenu.pdf"
 
   
