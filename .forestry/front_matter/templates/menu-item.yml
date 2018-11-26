@@ -94,5 +94,5 @@ fields:
   description: Does this menu have a sweet item?
 pages:
 - _posts/2018-10-23-cherry-pie.md
-- _posts/2018-11-05-galettes.md
 - _posts/2018-10-23-three-cheese-quiche.md
+- _posts/2018-11-05-galettes.md
