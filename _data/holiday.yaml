@@ -1,5 +1,5 @@
 ---
--type: file
+- type: file
   name: menu_holiday
   label: Holida Menu
   hidden: false
