@@ -33,14 +33,14 @@ header {
             padding: $base / 2;
         }
         .hide {
-            @media(max-width: $med-break){
+            @media(max-width: 865px){
                 display: none;
             }
         }
         a {
             margin-right: $base;
             &:last-of-type {
-                margin-right: 0;
+              //  margin-right: 0;
 
             }
         }
@@ -52,10 +52,18 @@ header {
         svg {
            display: none;
            width: 28px;
-           @media(max-width: $med-break){
+           @media(max-width: 865px){
                 display: block;
                 height: 31px;
            }
+        }
+        .social-row {
+            a {
+                margin-right: 0;
+                img {
+                    margin-left: $base / 4;;
+                }
+            }
         }
     }
     &.after-scroll {
