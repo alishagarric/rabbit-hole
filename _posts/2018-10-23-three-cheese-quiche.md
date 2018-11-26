@@ -6,7 +6,7 @@ gluten_free: true
 vegan: true
 vegetarian: true
 background_image: "/uploads/quiche.jpg"
-item_menu: "/uploads/QUICHE MENU.pdf"
+item_menu: "/uploads/QUICHE MENU (1).pdf"
 apple: false
 peppermint: false
 vegetables: true
