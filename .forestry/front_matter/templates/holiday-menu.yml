@@ -6,3 +6,5 @@ fields:
 - type: file
   name: menu_holiday
   label: Holiday Menu
+pages:
+- _data/holiday.yaml
