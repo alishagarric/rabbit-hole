@@ -1,5 +1,5 @@
 ---
-title: PIE ROLL
+title: PIE ROLLS
 description: rolled pastry, signature pie crust, filled with butter, brown sugar and
   cinnamon
 background_image: "/uploads/IMG_4988.jpg"
