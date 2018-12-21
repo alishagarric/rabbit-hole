@@ -7,7 +7,7 @@ vegan: true
 vegetarian: true
 background_image: "/uploads/Hendo (48 of 62).jpg"
 item_menu: "/uploads/PIE MENU  (4).pdf"
-apple: true
+apple: false
 peppermint: false
 vegetables: false
 mixed_berry: true
@@ -16,14 +16,14 @@ meat: false
 strawberry: false
 cranberry: false
 vanilla: false
-lemon: true
+lemon: false
 pecan: false
 hazelnut: false
 pumpkin: false
 lemon_and_blueberry: false
-coconut: true
-berry: true
-brule: true
+coconut: false
+berry: false
+brule: false
 blueberry: false
 savory: false
 sweet: false
