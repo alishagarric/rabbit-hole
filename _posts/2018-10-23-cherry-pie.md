@@ -6,7 +6,7 @@ gluten_free: true
 vegan: true
 vegetarian: true
 background_image: "/uploads/Hendo (48 of 62).jpg"
-item_menu: "/uploads/PIE MENU  (5).pdf"
+item_menu: ''
 apple: false
 peppermint: false
 vegetables: false
