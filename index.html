@@ -205,14 +205,14 @@ ending_section_text: Rabbit Hole Pie shares a kitchen and partial retail space w
                             <p>{{ page.announcement_section_text }}</p>
                             <p></p>
 
-                            {% if announcement_section_show_menu_button == true %}
+                            {% if announcement_section_show_menu_button == "true" %}
                                 <a href="{{ site.baseurl }}{{ site.data.holiday.menu_holiday }}" target="_blank">
                                     <div class="button small white">
                                         {{ page.announcement_section_menu_button_text }}
                                     </div>
                                 </a>
                             {% endif %}
-                            {% if announcement_section_show_secondary_button == true %}
+                            {% if announcement_section_show_secondary_button == "true" %}
                                 <a href="{{ page.announcement_section_secondary_button_link }}" target="_blank">
                                     <div class="button small white">
                                         {{ page.announcement_section_secondary_button_text }}
