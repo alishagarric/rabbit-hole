@@ -4,7 +4,10 @@
             <a href="#location"><p>location</p></a>
             <a href="#menu"><p>menu</p></a>
             <a href="#about"><p>about</p></a>
-            <a href="#holiday"><p>holidays</p></a>
+            {% if page.show_announcement_link == "yes" %}
+                <a href="#holiday"><p>{{ page.announcement_link_text }}</p></a>
+            {% endif %}
+            
 
             <div class="logo hide">
                 <img src="assets/logo.png" alt="Rabbit Hole Logo">
