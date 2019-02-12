@@ -1,7 +1,7 @@
 ---
 title: Pastries
-description: assorted pastry and products
-background_image: ''
+description: assorted pie-centric pastries
+background_image: "/uploads/IMG_4732 2.jpg"
 item_menu: ''
 apple: false
 peppermint: false
