@@ -1,0 +1,25 @@
+---
+title: WEDDINGS
+description: Let us take care of desserts on your wedding day!
+background_image: ''
+item_menu: ''
+apple: false
+peppermint: false
+vegetables: false
+berry: false
+orange: false
+meat: false
+strawberry: false
+cranberry: false
+brule: false
+lemon: false
+pecan: false
+hazelnut: false
+pumpkin: false
+blueberry: false
+coconut: false
+savory: false
+sweet: false
+date: 2019-02-12 15:10:45 +0000
+
+---
