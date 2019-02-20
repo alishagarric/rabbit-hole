@@ -93,7 +93,7 @@ fields:
   label: Sweet Item
   description: Does this menu have a sweet item?
 pages:
-- _posts/quiche.md
+- _posts/2019-02-20-quiche.md
 - _posts/2019-02-20-pies.md
-- _posts/pastries.md
+- _posts/2019-02-20-pastries.md
 - _posts/2019-02-12-weddings.md
