@@ -63,7 +63,7 @@ about_text_paragrah_3: 'The name is a nod to the thrilling, yet terrifying notio
 ending_section_image: "/uploads/IMG_8229.jpg"
 ending_section_sub_headline: Let's cook together!
 ending_section_headline: CUSTOMIZED COOKING DEMOS
-ending_section_text: ''
+ending_section_text: call or email to schedule a demo
 
 ---
 {% assign num-1 = page.number | slice: 0 %}
@@ -211,19 +211,7 @@ ending_section_text: ''
                             {% if page.announcement_section_show_secondary_button == "yes" %}
                                 <a href="{{ page.announcement_section_secondary_button_link }}" target="_blank">
                                     <div class="button small white">
-                                    contact me
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-           </div>
-           {% for post in site.posts %}
-                <div id="menu" class="section item">
-                    <div class="inner">
-                        <div class="border image-container 
-                                    <div class="button small white">
-                                        {{ page.announcement_section_secondary_button_text }}
+                                        {{page.announcement_section_secondary_button_text }}
                                     </div>
                                 </a>
                             {% endif %}
