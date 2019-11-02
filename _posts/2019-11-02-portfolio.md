@@ -1,7 +1,7 @@
 ---
 title: PORTFOLIO
 description: "...................."
-background_image: "/uploads/IMG_2839 2.jpg"
+background_image: "/uploads/IMG_8230.JPG"
 item_menu: ''
 apple: false
 peppermint: false
