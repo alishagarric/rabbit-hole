@@ -92,6 +92,6 @@ fields:
   label: Sweet Item
   description: Does this menu have a sweet item?
 pages:
-- _posts/portfolio.md
 - _posts/blog.md
+- _posts/portfolio.md
 - _posts/recipes.md
