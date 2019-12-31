@@ -1,7 +1,0 @@
----
-label: Holiday Menu
-hide_body: false
-fields:
-- type: file
-  name: menu_holiday
-  label: Holiday Menu
