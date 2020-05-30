@@ -22,6 +22,3 @@ fields:
   name: item_menu
   label: Menu
   description: PDF menu customer can click to see
-pages:
-- _posts/portfolio.md
-- _posts/recipes.md
